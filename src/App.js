@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import Header from './Header';
-import Teachers from './Teachers';
-import Footer from './Footer';
+import Header from "./Header";
+import Teachers from "./Teachers";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <Header />
-        <Teachers />
-        <Footer />
-      </div>
-    );
+    return [
+      <Header key="head" />,
+      <Teachers key="teach" />,
+      <Footer key="foot" />
+    ];
   }
 }
 

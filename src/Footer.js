@@ -1,5 +1,3 @@
-import React from 'react';
-
-const Footer = () => <span>2017</span>;
+const Footer = () => 2017;
 
 export default Footer;
